@@ -50,7 +50,7 @@ RUN yum -y group install "Development Tools"
 RUN yum -y install makeself gdb vim-common wget openssl-devel sudo tpm2-tools tpm2-tss-devel
 
 # install go...
-ENV GOLANG_TAR=go1.14.6.linux-amd64.tar.gz
+ENV GOLANG_TAR=go1.16.7.linux-amd64.tar.gz
 RUN cd /tmp \
     && wget https://golang.org/dl/$GOLANG_TAR \
     && tar -C /usr/local -xzf $GOLANG_TAR \
